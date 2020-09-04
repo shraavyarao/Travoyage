@@ -1,0 +1,40 @@
+body{
+    background-image: url(back.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: lato;
+    color: rgb(255, 255, 255);
+}
+
+#content{
+    text-align: center;
+    padding-top: 25%;
+    text-shadow: 0px 4px 3px #2e2b6c;
+               
+}
+
+h1 {
+    
+    font-weight: 700;
+    font-size: 5em;
+}
+
+html {
+    height: 100%;
+}
+
+hr{
+    width: 700px;
+}
+
+.navbar-default{
+    background-color:  rgb(255, 255, 255,0.7);
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #4e4c4c;
+}
+
+.font-control{
+    background-color: #ffffffa8;
+}
