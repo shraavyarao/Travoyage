@@ -44,9 +44,12 @@ padding-left: 2%;
 }
 
 .media{
-    padding-top: 4%;
-    color: black;
+    padding-top: 2%;
+    background-color:  rgb(255, 255, 255,0.7);
+    color:black;
+    border-radius: 15px;
     text-align: left;
+
 }
 
 .media-body .jumbotron{
@@ -69,12 +72,21 @@ h2{
     text-align: center;
     padding-top: 5%;
 }
+
+h5{
+    color: black;
+}
+
 html {
     height: 100%;
 }
 
 hr{
     width: 700px;
+}
+
+#desc1{
+    font-size: small;
 }
 
 .navbar-default{
