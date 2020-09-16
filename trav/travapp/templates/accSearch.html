@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,9 +9,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
 
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css">
     <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet"> 
-</head>
+</head> --> -->
+{% extends 'base.html' %}
+{% load static %}
+{% block body_block %}
 <body>
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -246,7 +249,7 @@
                       <div class="thumbnail">
                         <img data-src="holder.js/100%x200" alt="100%x200" src="https://www.w3schools.com/images/w3schools_green.jpg" data-holder-rendered="true" style="height: 300px; width: 100%; display: block;">
                         <div class="caption">
-                            <h4 class="media-heading">Restaurant name</h4>
+                            <h4 class="media-heading">Accomodation name</h4>
 
                             <h5>Address</h5>
                             <table class="table">
@@ -255,26 +258,27 @@
                                   
                                     <td>
                                       <tr>
-                                          <th>Rating:</th>
-                                          <td>4 stars</td>
-                                        </tr>
-                                        <tr>
-                                          <th>Food:</th>
-                                          <td>Veg</td>
+                                        <th>Class:</th>
+                                        <td>5 stars</td>
+                                      </tr>
+                                      <tr>
+                                          <th>Availability:</th>
+                                          <td>Yes</td>
                                         </tr>
 
                                         <tr>
-                                          <th>Class:</th>
-                                          <td>3 stars</td>
+                                          <th>User Rating:</th>
+                                          <td>5</td>
                                         </tr>
-                                      
+                                       
+                                       
                                     </td>
                                    
                                   </tr>
                               
                                 </tbody>   
                             </table>
-                            <p><a href="restDetail.html" class="btn btn-primary" role="button">Check!</a></p>
+                            <p><a href="accDetail.html" class="btn btn-primary" role="button">Check!</a></p>
                         </div>
                       </div>
                     </div>
@@ -282,43 +286,7 @@
                         <div class="thumbnail">
                           <img data-src="holder.js/100%x200" alt="100%x200" src="https://www.w3schools.com/images/w3schools_green.jpg" data-holder-rendered="true" style="height: 300px; width: 100%; display: block;">
                           <div class="caption">
-                              <h4 class="media-heading">Restaurant name</h4>
-  
-                              <h5>Address</h5>
-                              <table class="table">
-                                <tbody>
-                                    <tr>
-                                    
-                                      <td>
-                                        <tr>
-                                            <th>Rating:</th>
-                                            <td>4 stars</td>
-                                          </tr>
-                                          <tr>
-                                            <th>Food:</th>
-                                            <td>Veg</td>
-                                          </tr>
-  
-                                          <tr>
-                                            <th>Class:</th>
-                                            <td>3 stars</td>
-                                          </tr>
-                                        
-                                      </td>
-                                     
-                                    </tr>
-                                
-                                  </tbody>   
-                              </table>
-                              <p><a href="restDetail.html" class="btn btn-primary" role="button">Check!</a></p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-4">
-                        <div class="thumbnail">
-                          <img data-src="holder.js/100%x200" alt="100%x200" src="https://www.w3schools.com/images/w3schools_green.jpg" data-holder-rendered="true" style="height: 300px; width: 100%; display: block;">
-                          <div class="caption">
-                              <h4 class="media-heading">Restaurant name</h4>
+                              <h4 class="media-heading">Accomodation name</h4>
   
                               <h5>Address</h5>
                             <table class="table">
@@ -327,27 +295,64 @@
                                   
                                     <td>
                                       <tr>
-                                          <th>Rating:</th>
-                                          <td>4 stars</td>
-                                        </tr>
-                                        <tr>
-                                          <th>Food:</th>
-                                          <td>Veg</td>
+                                        <th>Class:</th>
+                                        <td>5 stars</td>
+                                      </tr>
+                                      <tr>
+                                          <th>Availability:</th>
+                                          <td>Yes</td>
                                         </tr>
 
                                         <tr>
-                                          <th>Class:</th>
-                                          <td>3 stars</td>
+                                          <th>User Rating:</th>
+                                          <td>5</td>
                                         </tr>
-                                      
+                                       
+                                       
                                     </td>
+                                     
+                                    </tr>
+                                
+                                  </tbody>   
+                              </table>
+                              <p><a href="accDetail.html" class="btn btn-primary" role="button">Check!</a></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                          <img data-src="holder.js/100%x200" alt="100%x200" src="https://www.w3schools.com/images/w3schools_green.jpg" data-holder-rendered="true" style="height: 300px; width: 100%; display: block;">
+                          <div class="caption">
+                              <h4 class="media-heading">Accomodation name</h4>
+  
+                              <h5>Address</h5>
+                              <table class="table">
+                                <tbody>
+                                    <tr>
+                                    
+                                      <td>
+                                        <tr>
+                                          <th>Class:</th>
+                                          <td>5 stars</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Availability:</th>
+                                            <td>Yes</td>
+                                          </tr>
+  
+                                          <tr>
+                                            <th>User Rating:</th>
+                                            <td>5</td>
+                                          </tr>
+                                         
+                                         
                                       </td>
                                      
                                     </tr>
                                 
                                   </tbody>   
                               </table>
-                              <p><a href="restDetail.html" class="btn btn-primary" role="button">Check!</a></p>
+                              <p><a href="accDetail.html" class="btn btn-primary" role="button">Check!</a></p>
                           </div>
                         </div>
                         
@@ -357,7 +362,7 @@
                       <div class="thumbnail">
                         <img data-src="holder.js/100%x200" alt="100%x200" src="https://www.w3schools.com/images/w3schools_green.jpg" data-holder-rendered="true" style="height: 300px; width: 100%; display: block;">
                         <div class="caption">
-                            <h4 class="media-heading">Restaurant name</h4>
+                            <h4 class="media-heading">Accomodation name</h4>
 
                             <h5>Address</h5>
                             <table class="table">
@@ -366,26 +371,27 @@
                                   
                                     <td>
                                       <tr>
-                                          <th>Rating:</th>
-                                          <td>4 stars</td>
-                                        </tr>
-                                        <tr>
-                                          <th>Food:</th>
-                                          <td>Veg</td>
+                                        <th>Class:</th>
+                                        <td>5 stars</td>
+                                      </tr>
+                                      <tr>
+                                          <th>Availability:</th>
+                                          <td>Yes</td>
                                         </tr>
 
                                         <tr>
-                                          <th>Class:</th>
-                                          <td>3 stars</td>
+                                          <th>User Rating:</th>
+                                          <td>5</td>
                                         </tr>
-                                      
+                                       
+                                       
                                     </td>
                                    
                                   </tr>
                               
                                 </tbody>   
                             </table>
-                            <p><a href="restDetail.html" class="btn btn-primary" role="button">Check!</a></p>
+                            <p><a href="accDetail.html" class="btn btn-primary" role="button">Check!</a></p>
                         </div>
                       </div>
                     </div>
@@ -393,35 +399,36 @@
                         <div class="thumbnail">
                           <img data-src="holder.js/100%x200" alt="100%x200" src="https://www.w3schools.com/images/w3schools_green.jpg" data-holder-rendered="true" style="height: 300px; width: 100%; display: block;">
                           <div class="caption">
-                              <h4 class="media-heading">Restaurant name</h4>
+                              <h4 class="media-heading">Accomodation name</h4>
   
                               <h5>Address</h5>
-                            <table class="table">
-                              <tbody>
-                                  <tr>
-                                  
-                                    <td>
-                                      <tr>
-                                          <th>Rating:</th>
-                                          <td>4 stars</td>
-                                        </tr>
-                                        <tr>
-                                          <th>Food:</th>
-                                          <td>Veg</td>
-                                        </tr>
-
+                              <table class="table">
+                                <tbody>
+                                    <tr>
+                                    
+                                      <td>
                                         <tr>
                                           <th>Class:</th>
-                                          <td>3 stars</td>
+                                          <td>5 stars</td>
                                         </tr>
-                                      
-                                    </td>
+                                        <tr>
+                                            <th>Availability:</th>
+                                            <td>Yes</td>
+                                          </tr>
+  
+                                          <tr>
+                                            <th>User Rating:</th>
+                                            <td>5</td>
+                                          </tr>
+                                         
+                                         
+                                      </td>
                                      
                                     </tr>
                                 
                                   </tbody>   
                               </table>
-                              <p><a href="restDetail.html" class="btn btn-primary" role="button">Check!</a></p>
+                              <p><a href="accDetail.html" class="btn btn-primary" role="button">Check!</a></p>
                           </div>
                         </div>
                       </div>
@@ -429,35 +436,35 @@
                         <div class="thumbnail">
                           <img data-src="holder.js/100%x200" alt="100%x200" src="https://www.w3schools.com/images/w3schools_green.jpg" data-holder-rendered="true" style="height: 300px; width: 100%; display: block;">
                           <div class="caption">
-                              <h4 class="media-heading">Restaurant name</h4>
+                              <h4 class="media-heading">Accomodation name</h4>
   
                               <h5>Address</h5>
-                            <table class="table">
-                              <tbody>
-                                  <tr>
-                                  
-                                    <td>
-                                      <tr>
-                                          <th>Rating:</th>
-                                          <td>4 stars</td>
-                                        </tr>
-                                        <tr>
-                                          <th>Food:</th>
-                                          <td>Veg</td>
-                                        </tr>
-
+                              <table class="table">
+                                <tbody>
+                                    <tr>
+                                    
+                                      <td>
                                         <tr>
                                           <th>Class:</th>
-                                          <td>3 stars</td>
+                                          <td>5 stars</td>
                                         </tr>
-                                      
-                                    </td>
-                                     
+                                        <tr>
+                                            <th>Availability:</th>
+                                            <td>Yes</td>
+                                          </tr>
+  
+                                          <tr>
+                                            <th>User Rating:</th>
+                                            <td>5</td>
+                                          </tr>
+                                         
+                                         
+                                      </td>
                                     </tr>
                                 
                                   </tbody>   
                               </table>
-                              <p><a href="restDetail.html" class="btn btn-primary" role="button">Check!</a></p>
+                              <p><a href="accDetail.html" class="btn btn-primary" role="button">Check!</a></p>
                           </div>
                         </div>
                       </div>
@@ -478,7 +485,10 @@
 <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
-<script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<!-- <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+</html> -->
 </body>
-</html>
+
+{% endblock %}
