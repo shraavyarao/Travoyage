@@ -1,4 +1,5 @@
 body{
+    background-attachment: fixed;
     background-image: url(back.jpg);
     background-position: center;
     background-size: cover;
