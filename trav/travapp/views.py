@@ -1,5 +1,10 @@
 from django.shortcuts import render, redirect
 from django.views.generic import View
+import mysql.connector
+from django.db import connection
+import pandas as pd
+
+alter user my_user@'localhost' identified with mysql_native_password by "qazwsx";
 
 # Create your views here.
 # class HomePage(View):
@@ -54,7 +59,29 @@ class IndexPage(View):
 
     def get(self, request, *args, **kwargs):
 
-        return render(request, 'index.html')
+        return render(request, 'index.html') 
+
+
+    def post(self, request, *args, **kwargs):
+
+        # form = request.POST
+        # go = 
+        connection = mysql.connector.connect(host='localhost',database='travoyage',
+                                         user='root',
+                                         password='qazwsx')
+            cur = connection.cursor()
+            cur.execute("SELECT * FROM tourist_spot")
+            data1 = cur.fetchall()
+            df=pd.DataFrame(data1,columns=["tourist_spot","description","city","state", "region_type", "accesibility", "season", "profile", "image_1",  "image_2",  "image_3")
+            print(df)
+            html=df.to_html()
+            text_file = open("travapp/templates/search.html", "w")
+            text_file.write(html)
+            text_file.close()
+
+
+
+
 
 class LoginPage(View):
 
